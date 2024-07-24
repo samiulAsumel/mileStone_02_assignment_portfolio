@@ -7,13 +7,13 @@ font-family: "Playwrite NL", cursive; */
 :root {
   --bg-color: black;
   --font-color: white;
-  --font-color-2: rgba(255, 255, 255, 0.5);
+  --font-color-2: #ffffff70;
   --font-family: "Roboto", sans-serif;
   --font-family-2: "Playwrite NL", cursive;
   --heading-main-size: 4.88rem;
   --heading1-size: 3rem;
   --heading2-size: 2rem;
-  --paragraph-size: 1rem;
+  --paragraph-size: 1.5rem;
   --btn-color: rgb(230, 83, 60);
   --nav-heading-color: rgb(230, 83, 60);
   --nav-heading-font-size: 2.5rem;
@@ -25,6 +25,10 @@ font-family: "Playwrite NL", cursive; */
 * {
   margin: 0;
   padding: 0;
+}
+
+p {
+  color: var(--font-color-2);
 }
 
 body {
@@ -79,7 +83,7 @@ nav-hide {
 }
 
 #active1 {
-  background-color: red;
+  background-color: var(--btn-color);
   padding: 3px;
   border-radius: 50px;
   border: none;
@@ -108,7 +112,8 @@ nav-hide {
 
 .first .text h1 span {
   font-family: var(--font-family-2);
-  font-weight: 200;
+  font-weight: 100;
+  font-style: italic;
 }
 
 .first .text p {
@@ -118,7 +123,7 @@ nav-hide {
   margin-left: 0;
 }
 
-.first .text button {
+.btn {
   background-color: black;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.568);
@@ -252,4 +257,228 @@ nav-hide {
 
 .second .image-second .four img {
   border-radius: 50%;
+}
+
+/* div class third style */
+.third {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 8rem;
+  background: rgb(34, 34, 34);
+  border-radius: 18px;
+}
+
+.third-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+}
+
+.third .third-text {
+  width: 27.68rem;
+  height: 19.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.third .third-text h1 {
+  font-size: var(--heading1-size);
+  margin-bottom: 1.5rem;
+}
+
+.third .third-text p {
+  font-size: var(--paragraph-size);
+}
+
+.third .third-image img {
+  width: 22.87rem;
+  height: 19.5rem;
+  margin-left: 20rem;
+  border-radius: 18px;
+}
+
+.third #active3 {
+  background-color: var(--btn-color);
+  margin-top: 1.5rem;
+}
+
+/* div class forth style */
+.forth {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+
+.forth .forth-container {
+  display: grid;
+  gap: 4rem;
+}
+
+.forth .forth-text h1 {
+  font-size: var(--heading1-size);
+}
+
+.forth .forth-text p {
+  font-size: var(--paragraph-size);
+}
+
+.forth .forth-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.forth .forth-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* div class fifth style */
+.fifth {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+
+.fifth-text {
+  max-width: 30%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.fifth-text h1 {
+  font-size: var(--heading1-size);
+  margin-bottom: 1rem;
+}
+
+.fifth-text p {
+  font-size: var(--paragraph-size);
+}
+
+.fifth-main {
+  background: rgb(34, 34, 34);
+}
+
+.fifth-container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 2rem;
+}
+
+table,
+th,
+td {
+  padding: 5px;
+  border: 1px solid #ffffff20;
+  border-collapse: collapse;
+}
+
+table {
+  margin-top: 3rem;
+}
+
+th {
+  font-size: 16px;
+}
+
+td {
+  color: #ffffff80;
+  font-size: 14px;
+  width: 7rem;
+}
+
+.calculate-bmi h2 {
+  font-size: var(--heading2-size);
+  margin-bottom: 1rem;
+}
+
+.calculate-bmi p {
+  font-size: var(--paragraph-size);
+  margin-bottom: 1rem;
+}
+
+.form-one {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-two {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+input,
+select {
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  color: #ffffff80;
+  font-size: 14px;
+}
+
+option {
+  color: #00000090;
+}
+
+.fifth #active4 {
+  background-color: var(--btn-color);
+  margin-top: 1.5rem;
+}
+
+/* div class six style */
+.six {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+
+.six-text {
+  max-width: 55%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.six-text h1 {
+  font-size: var(--heading1-size);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.six-text p {
+  text-align: center;
+}
+
+.six-image img {
+  width: 23rem;
+  height: 18rem;
+}
+
+.six-container {
+  background-color: #ffffff30;
+  border-radius: 1rem;
+  padding: none;
+}
+
+.six-image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.six-image img {
+  position: relative;
+  border-radius: 1rem;
+  margin-top: 2.9rem;
+}
+
+figcaption {
+  position: relative;
+  top: -65px;
+  left: 10px;
 }
