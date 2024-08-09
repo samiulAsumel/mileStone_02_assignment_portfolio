@@ -169,6 +169,10 @@ nav-hide {
   font-size: var(--heading2-size);
 }
 
+.image .circle .text p {
+  font-size: 1.15rem;
+}
+
 .dot {
   height: 40px;
   width: 40px;
@@ -213,7 +217,7 @@ nav-hide {
 }
 
 .image .text2 p {
-  font-size: var(--paragraph-size);
+  font-size: 1.15rem;
 }
 
 /* div class second style */
@@ -481,4 +485,20 @@ figcaption {
   position: relative;
   top: -65px;
   left: 10px;
+}
+
+/* div class seven style */
+.seven {
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 5rem;
+}
+
+.seven-container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 3rem;
+  gap: 150px;
 }
